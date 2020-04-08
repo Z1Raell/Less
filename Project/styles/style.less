@@ -1,0 +1,73 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(1, 157, 157);
+
+}
+
+header {
+    background-color: rgb(0, 139, 139);
+    padding: 15px;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 400px));
+    gap: 25px;
+}
+
+.board-style {
+
+    @bgc: rgb(220, 220, 220);
+    @overflow: auto;
+    @padding: 10px;
+    @margin: 20px;
+}
+
+
+.board {
+    .board-style();
+	margin: @margin;
+    background-color: @bgc;
+    overflow: @overflow;
+    padding: @padding;
+}
+
+.post-style {
+    @bgc: rgb(245, 245, 245);
+    @padding: 15px;
+    @margin: 10px;
+
+}
+
+.post {
+    .post-style();
+
+    background-color: @bgc;
+    padding: @padding;
+    margin: @margin;
+
+}
+
+i {
+    margin-left: 5px;
+}
+
+img {
+    width: 24px;
+    height: 24px;
+
+}
+
+.avatar {
+
+    float: right;
+
+
+}
+
+
+.icons {
+    margin-top: 10px;
+}
